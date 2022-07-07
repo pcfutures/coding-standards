@@ -224,8 +224,6 @@ function validate(mixed $x): bool {
 
 ### Variables, keys and functions should be camelCased
 
-The only exception to this is react components.
-
 :x: Incorrect:
 
 ```php
@@ -256,8 +254,6 @@ function validateAVariable(mixed $theValue): bool {
 
 ### SQL column names should be snake_cased
 
-The only exception to this is react components.
-
 :x: Incorrect:
 
 ```php
@@ -270,9 +266,7 @@ $table->string('firstName');
 $table->string('first_name');
 ```
 
-### Secret values (passwords, salts, encryption keys) should NEVER be committed to GitHub
-
-The only exception to this is react components.
+### Secret values (passwords, salts, encryption keys) should NEVER be committed to GitHub and should be stored in an environment (.env) file
 
 :x: Incorrect:
 
