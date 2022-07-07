@@ -269,3 +269,19 @@ $table->string('firstName');
 ```php
 $table->string('first_name');
 ```
+
+### Secret values (passwords, salts, encryption keys) should NEVER be committed to GitHub
+
+The only exception to this is react components.
+
+:x: Incorrect:
+
+```php
+$secret = 'secret_value';
+```
+
+:heavy_check_mark: Correct:
+
+```php
+$secret = config('app.secret_value');
+```
