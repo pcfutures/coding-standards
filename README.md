@@ -2,6 +2,8 @@
 
 Examples are written in PHP, but should be followed for all relevant languages.
 
+---
+
 ### Import statements should be grouped by location & type
 
 Groups include and should be in the following order:
