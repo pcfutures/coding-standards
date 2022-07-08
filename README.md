@@ -252,6 +252,48 @@ function validateAVariable(mixed $theValue): bool {
 }
 ```
 
+### Global constants should be used instead of magic numbers
+
+:x: Incorrect:
+
+```php
+function calculateCircumference(float $radius): float {
+    return 2 * 3.141592654 * $radius;
+}
+```
+
+:heavy_check_mark: Correct:
+
+```php
+const PI = 3.141592654;
+
+function calculateCircumference(float $radius): float {
+    return 2 * PI * $radius;
+}
+```
+
+### Global constants should be CAPS_CASE
+
+:x: Incorrect:
+
+```php
+const pi = 3.141592654;
+
+function calculateCircumference(float $radius): float {
+    return 2 * pi * $radius;
+}
+```
+
+:heavy_check_mark: Correct:
+
+```php
+const PI = 3.141592654;
+
+function calculateCircumference(float $radius): float {
+    return 2 * PI * $radius;
+}
+```
+
 ### SQL column names should be snake_cased
 
 :x: Incorrect:
