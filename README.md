@@ -181,7 +181,7 @@ $str='hello'+'world';
 $str = 'hello' + 'world';
 ```
 
-### Math operators should only be used for mathematical operations
+### Math operators should ONLY be used for mathematical operations
 
 :x: Incorrect:
 
