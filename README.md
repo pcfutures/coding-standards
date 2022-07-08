@@ -1,6 +1,6 @@
 # PC Futures Coding Standards
 
-## Examples are written in PHP, but should be followed for all relevant languages
+Examples are written in PHP, but should be followed for all relevant languages.
 
 ### Import statements should be grouped by location & type
 
@@ -45,6 +45,8 @@ use Carbon\Carbon;
 use Auth;
 ```
 
+---
+
 ### Import statements should be ordered by length in descending order:
 
 :x: Incorrect:
@@ -62,6 +64,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 ```
+
+---
 
 ### Code should be indented by 4 spaces
 
@@ -81,6 +85,8 @@ function add(int $x, int $y): int {
 }
 ```
 
+---
+
 ### Curly brackets should appear on the same line as statements
 
 :x: Incorrect:
@@ -99,6 +105,8 @@ function add(int $x, int $y): int {
     return $x + $y;
 }
 ```
+
+---
 
 ### Line breaks should be used to separate functionality differences
 
@@ -131,6 +139,8 @@ function subtract(int $x, int $y): int {
 }
 ```
 
+---
+
 ### Variables and functions should be typed
 
 :x: Incorrect:
@@ -148,6 +158,8 @@ function add(int $x, int $y): int {
     return $x + $y;
 }
 ```
+
+---
 
 ### Single quotes should be preferred over double quotes
 
@@ -167,6 +179,8 @@ function appendGreeting(string $name): string {
 }
 ```
 
+---
+
 ### Spaces should be used to separate words and symbols
 
 :x: Incorrect:
@@ -180,6 +194,8 @@ $str='hello'+'world';
 ```php
 $str = 'hello' + 'world';
 ```
+
+---
 
 ### Math operators should ONLY be used for mathematical operations
 
@@ -198,6 +214,8 @@ $arr = array_merge(['hello'], ['world']);
 
 $str = 'hello' . 'world';
 ```
+
+---
 
 ### Inline if statements are ONLY allowed if they're used as Guard Clauses
 
@@ -221,6 +239,8 @@ function validate(mixed $x): bool {
     return true;
 }
 ```
+
+---
 
 ### Variables, keys and functions should be camelCased
 
@@ -252,6 +272,8 @@ function validateAVariable(mixed $theValue): bool {
 }
 ```
 
+---
+
 ### Global constants should be used instead of magic numbers
 
 :x: Incorrect:
@@ -271,6 +293,8 @@ function calculateCircumference(float $radius): float {
     return 2 * PI * $radius;
 }
 ```
+
+---
 
 ### Global constants should be CAPS_CASE
 
@@ -294,6 +318,8 @@ function calculateCircumference(float $radius): float {
 }
 ```
 
+---
+
 ### SQL column names should be snake_cased
 
 :x: Incorrect:
@@ -307,6 +333,8 @@ $table->string('firstName');
 ```php
 $table->string('first_name');
 ```
+
+---
 
 ### Secret values (passwords, salts, encryption keys) should NEVER be committed to GitHub and should be stored in an environment (.env) file
 
