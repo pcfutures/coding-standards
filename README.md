@@ -36,6 +36,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
+use Carbon\Carbon;
 
 use App\Models\Traits\SoftDeletes\SoftDeletes;
 use App\Models\HistoryPivotChangeAttribute;
@@ -43,7 +44,6 @@ use App\Models\History;
 
 use ReflectionMethod;
 use ReflectionClass;
-use Carbon\Carbon;
 use Auth;
 ```
 
